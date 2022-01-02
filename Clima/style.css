@@ -1,0 +1,154 @@
+* {
+  
+  font-family: 'Raleway', serif;
+ }
+/*Body of the page*/
+.body{
+  margin: 50px;
+  margin-bottom:50px;
+  padding: 0;
+  font-size: 15px;
+  font-family: 'Raleway', sans-serif;
+  opacity: 0.3;
+  background: rgb(8, 2, 2);
+} 
+
+/*Land, Water, and Sky Section*/
+.container {
+  display: flex;
+  flex-direction: column;
+  font-size: 70%;
+  
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  height: 500px;
+  flex-wrap: wrap;
+  align-content: space-between;
+  flex-direction: row;
+}
+
+/* Responsive layout -change flex direction*/
+@media (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+  }
+}
+
+.cards {
+  border-radius: 25px;
+  display: inline-block;
+  height: 300px;
+  width: 350px;
+  margin: 35px;
+  padding: 38px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  text-align: center;
+  font-size:20px;
+}
+
+h3 {
+  font-size: 22px;
+}
+h2{
+  font-size:20px;
+}
+
+
+/*Cards Colour*/
+#land { background-color: #1cb44a;}
+#water { background-color: #1cb44a; }
+#sky { background-color: #1cb44a; }
+
+/*Button-see Stats*/
+.fill:hover, .fill:focus {
+  box-shadow: inset 0 0 0 2em var(--hover);
+}
+.pulse:hover, .pulse:focus {
+  -webkit-animation: pulse 1s;
+          animation: pulse 1s;
+  box-shadow: 0 0 0 2em rgba(255, 255, 255, 0);
+}
+@-webkit-keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 var(--hover);
+  }
+}
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 var(--hover);
+  }
+}
+.close:hover, .close:focus {
+  box-shadow: inset -3.5em 0 0 0 var(--hover), inset 3.5em 0 0 0 var(--hover);
+}
+.raise:hover, .raise:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  transform: translateY(-0.25em);
+}
+.up:hover, .up:focus {
+  box-shadow: inset 0 -3.25em 0 0 var(--hover);
+}
+.slide:hover, .slide:focus {
+  box-shadow: inset 6.5em 0 0 0 var(--hover);
+}
+.offset {
+  box-shadow: 0.3em 0.3em 0 0 var(--color), inset 0.3em 0.3em 0 0 var(--color);
+}
+.offset:hover, .offset:focus {
+  box-shadow: 0 0 0 0 var(--hover), inset 6em 3.5em 0 0 var(--hover);
+}
+button:hover, button:focus {
+  border-color: var(--hover);
+  color: #fff;
+}
+button {
+  background: none;
+  border: 3px solid;
+  font: inherit;
+  font-family: 'Julius Sans One', sans-serif;
+  font-size:15px;
+  font-weight:bold;
+  line-height: 1;
+  margin: 0.5em;
+  padding: 1em 2em;
+  transition: 0.25s;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+@media screen and (orientation: portrait) {
+  #toolbar {
+    width: 100%;
+  }
+}
+.wrapper {
+   /*This part is important for centering*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.typing-demo {
+  width: 25ch;
+  animation: typing 2s steps(30), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 5vw;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
+

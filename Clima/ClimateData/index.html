@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<!––Black Horizontal Menu bar––>
+<main> 
+	<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  	<link rel="stylesheet" href="styles.css" type="text/css"/>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+	
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature/Precipitation Chart</title>
+</head>
+<body bgcolor="black">
+  
+    <div class="climate-form">
+      
+      <input type="textbox"  id="searchTerm" class="inp" value="Country Code *" onfocus="if (this.value=='Country Code *') this.value='';"/>
+      <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" dataType" id="dataType">
+        <option value="">Select Data Type</option>
+        <option value="pr">Precipitation Data</option>
+        <option value="tas">Temperature Data</option>
+        
+      </select>
+        <select class="form-select form-select-sm" aria-label=".form-select-sm example" name="yearRange" id="yearRange">
+          <option value="">Select Year Range</option>
+          <option disabled value="">Past GCM</option>
+          <option value="1920/1939">1920-1939</option>
+          <option value="1940/1959">1940-1959</option>
+          <option value="1960/1979">1960-1979</option>
+          <option value="1980/1999">1980-1999</option>
+          <option disabled value="">Future GCM</option>
+          <option value="2020/2039">2020-2039</option>
+          <option value="2040/2059">2040-2059</option>
+          <option value="2060/2079">2060-2079</option>
+          <option value="2080/2099">2080-2099</option>
+        </select>
+        <input type="button" class="button" id="view_chart" value="Show Data"/>      <div><br><a href="../index.html"><button href="#">Go home</button></a></div>
+        <div class="help-tip">
+          <p>Get your country code from <a href="https://unstats.un.org/unsd/tradekb/knowledgebase/country-code">here</a></p>
+      </div>
+      </div>
+      <div id="chart"></div>
+      <div class="chartform">
+      <div id="climate-chart"></div></div>
+
+
+      <footer>
+        <p style="font-family:verdana">Data obtained from : <a href="https://datahelpdesk.worldbank.org/knowledgebase/articles/902061-climate-data-api">here</a></p>
+      </footer>
+      <script src="app.js"></script>
+      </div>
+
+</body>
+
+  </main> 			  
+</html>

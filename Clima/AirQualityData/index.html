@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css" type="text/css"/>
+	<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+	<title>Air Pollution Indicator</title> -->
+	 <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.1/chart.min.js"></script> -->
+	</head>
+<body text="white">
+	<div class="container">
+		<h1 class="d-flex justify-content-center">Air Pollution Data</h1>
+		<div class="air-info">
+			<div class="d-flex justify-content-center">
+			<h2 class="sub-heading">Air Quality Index :</h2>
+			<span class="air-quality">...</span>
+			<span class="arr">&nbsp;&rarr;&nbsp;</span>
+			<span class="air-quality-status">...</span></div>
+			<div class="d-flex justify-content-center">			<div class="component-container">
+				<div class="row"><div class="col">Concentration of pollutants in air :</div>
+				<div class="col">
+					μg/m³
+				  </div></div>
+                 
+				<div>
+					<div class="row">
+                      <div class="col"><p class="component-names">Carbon Monoxide :</p></div>
+                      <div class="col"><span class="component-val" data-comp="co"></span></div>
+					</div>
+					
+					
+				</div>
+				<div>
+					<div class="row">
+						<div class="col"><p class="component-names">Nitrogen Monoxide :</p></div>
+						<div class="col"><span class="component-val" data-comp="no"></span>
+						</div>
+					</div>
+				</div>
+				<div>
+					<div class="row"><div class="col">
+						<p class="component-names">Nitrogen Dioxide :</p>
+
+					</div>
+				<div class="col">
+					<span class="component-val" data-comp="no2"></span>
+
+				</div></div>
+				</div>
+				<div>
+					<div class="row"><div class="col">
+						<p class="component-names">Ozone :</p>
+
+					</div>
+				<div class="col">
+					<span class="component-val" data-comp="o3"></span>
+
+				</div></div>
+				</div>
+				<div>
+					<div class="row"><div class="col">
+						<p class="component-names">Sulphure Dioxide :</p>
+					</div>
+				<div class="col">
+					<span class="component-val" data-comp="so2"></span>
+
+				</div></div>
+				</div>
+				<div>
+<div class="row">
+	<div class="col">
+		<p class="component-names">Fine particles matter :</p>
+
+	</div>
+	<div class="col"><span class="component-val" data-comp="pm2_5"></span></div>
+</div>					
+				</div>
+				<div>
+					<div class="row">
+                 <div class="col">
+					<p class="component-names">Coarse particulate matter :</p>
+                 
+				 </div>
+				  <div class="col">
+					<span class="component-val" data-comp="pm10"></span>
+				  </div>
+					</div>
+					
+				</div>
+				<div>
+					<div class="row">
+						<div class="col">	<p class="component-names">Ammonia :</p>
+						</div>
+						<div class="col">	<span class="component-val" data-comp="nh3"></span>
+						</div>
+						<div><a href="../index.html"><button hfrs="#">Go home</button></a></div>
+					</div>
+				</div>
+				</div>
+			</div>
+		</div>
+		</div>
+	
+	
+      </div>
+	  <script src="./script.js" defer></script>
+</body>
+
+</main>
+</html>
