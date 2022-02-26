@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Create Account</title>
+</head>
+<body>
+    <div id="wholepg">
+    <div id= "heading"> 
+     Create Account
+    </div>
+    <form action="null.html" method="POST">
+        <div class="grid-container">
+        <div id="fname">
+            <label class="txt">
+                First name*
+                <input type="text">
+            </label>
+        </div>    
+        <div  id="lname">
+            <label class="txt">
+                Last name
+                <input type="text">
+            </label>
+        </div>
+        </div>    
+        <div>
+            <label class="txt">
+                Email*
+                <input type="email" size="126">
+            </label>
+        </div>  
+        <div class="grid-container">
+        <div>
+            <label class="txt">
+                Password*
+                <input type="password">
+            </label>
+        </div>
+        <div>
+            <label class="txt">
+                Confirm Password*
+                <input type="password">
+            </label>
+        </div> 
+    </div>  
+    <div class="grid-container">
+        <div>
+            <label class="txt">
+                Gender:
+                <input type="radio" id="Male" value="Male">
+                <label for="Male" class="txt">Male</label>
+                <input type="radio" id="Female" value="Male">
+                <label for="Male" class="txt">Female</label>
+
+            </label>
+        </div>
+        <div>
+            <label class="txt">
+                Hobbies
+                <input type="checkbox" value="Music">
+                <label for="Music"  class="txt">Music</label>
+                <input type="checkbox" value="Sports">
+                <label for="Sports" class="txt">Music</label>
+                <input type="checkbox" value="Travel">
+                <label for="Travel" class="txt">Travel</label>
+                <input type="checkbox" value="Movies">
+                <label for="Movies" class="txt">Movies</label>
+
+            </label>
+        </div>
+    </div> 
+    <div class="grid-container">
+        <div>
+            <label class="txt">
+                Source of income
+                <select id="income">
+                    <option value="Employed">Employed</option>
+                    <option value="Self-employed">Self-employed</option>
+                    <option value="Unemployed">Unemployed</option>
+                  </select>
+            </label>
+        </div>
+        <div>
+            <label class="txt">
+                Income
+                <input type="range" id="incomerng" name="incomerng" min="0" max="20K" value="0">
+            </label>
+        </div>
+    </div>
+    <div class="grid-container">
+        <div>
+            <label class="txt">
+               
+               <label for="myfile" class="txt">Upload Profile Picture</label>
+                <input type="file" id="myfile" name="myfile">
+            </label>
+        </div>
+        <div>
+            <label class="txt">
+                Age
+                <input type="number">
+            </label>
+        </div>
+        <div>
+            <label class="txt">
+                Bio
+            </label>
+        </div>
+    </div>
+        <div>
+                <textarea name="paragraph_text" cols="50" rows="10"></textarea>
+            
+        </div>
+        <input type="button" id="cre" value="Create">
+    </div>
+</body>
+</html>
