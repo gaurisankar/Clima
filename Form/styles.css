@@ -20,6 +20,7 @@
       font-size: 50px;
       display: flex;
       justify-content: center;
+      background-color: rgb(157, 189, 218);
   }
   .txt{
     color: rgb(88, 199, 162);
